@@ -1,3 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+<div class="parent">
+  <div class="contain">
+    <h1>Pure CSS Netflix Video Carousel</h1>
+    <p>
+      Inspired by <a href="https://twitter.com/Eli_White">Eli White's</a> article <a href="http://eng.wealthfront.com/2015/06/implementing-netflix-redesign.html">Performant CSS Animations: Netflix Case Study</a>,
+      his <a href="http://codepen.io/TheSavior/pen/LVeYBp">example pen</a>, and <a href="http://matthewjamestaylor.com/">Matt Taylor's</a>      <a href="http://codepen.io/mattjamestaylor/pen/dodYPr">CSS-only version.</a>
+    </p>
+    <div class="row">
+      <div class="row__inner">
+        <div class="tile" *ngFor="let person of persons">
+          <div class="tile__media">
+            <img class="tile__img" [src]="person.imageUrl" alt="" />
+          </div>
+          <div class="tile__details">
+            <div class="tile__title">
+              {{person.name}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__(453)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n\n/*https://codepen.io/joshhunt/pen/LVQZRa*/\n\nbody,\nhtml {\n  padding: 0 10px;\n  margin: 0;\n  background: #0e0f11;\n  color: #ecf0f1;\n  font-family: 'Open Sans', sans-serif;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n", ""]);
 
 // exports
 
