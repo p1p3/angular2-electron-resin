@@ -1,7 +1,14 @@
 const electron = require('electron');
 const path = require('path');
+const url = require('url');
 
-const { app, BrowserWindow } = electron;
+console.log('Initializing electron application...');
+const environment = process.env.NODE_ENV.trim() || 'development';
+
+const {
+  app,
+  BrowserWindow
+} = electron;
 
 // simple parameters initialization
 const electronConfig = {
@@ -28,10 +35,17 @@ if (electronConfig.URL_LAUNCHER_TOUCH_SIMULATE) {
   app.commandLine.appendSwitch('--simulate-touch-screen-with-mouse');
 }
 
-if (process.env.NODE_ENV === 'development') {
+if (environment === 'development') {
+  const appURL = url.format({
+    pathname: path.join(__dirname, 'dist/index.html'),
+    protocol: 'file:',
+    slashes: true
+  });
+
+  console.log(appURL);
   console.log('Running in development mode');
   Object.assign(electronConfig, {
-    URL_LAUNCHER_URL: `file:///${path.join(__dirname, 'dist', 'index.html')}`,
+    URL_LAUNCHER_URL: appURL,
     URL_LAUNCHER_HEIGHT: 600,
     URL_LAUNCHER_WIDTH: 800,
     URL_LAUNCHER_KIOSK: 0,
@@ -72,4 +86,5 @@ app.on('ready', () => {
 
   // the big red button, here we go
   window.loadURL(electronConfig.URL_LAUNCHER_URL);
+  console.log('Application fully loaded');
 });

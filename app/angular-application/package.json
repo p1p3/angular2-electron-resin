@@ -8,7 +8,12 @@
     "start": "ng serve",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build": "ng build --base-href $npm_package_config_baseurl",
+    "build resin": "ng build --base-href $npm_package_config_baseurl"
+  },
+  "config": {
+    "baseurl": "./"
   },
   "private": true,
   "dependencies": {
@@ -36,8 +41,9 @@
     "karma": "1.2.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^1.0.1",
-    "karma-jasmine": "^1.0.2",
     "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "^1.0.2",
+    "node-sass": "^4.5.0",
     "protractor": "~5.1.0",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",

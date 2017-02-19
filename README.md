@@ -1,9 +1,24 @@
-# resin-electronjs
+#angular-electronjs-resin(raspberrypi)
 
-a boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/) and [resin.io](http://resin.io)
+A boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/), [Angular](http://angular.io) and [resin.io](http://resin.io)
 
 ## Getting started
 
+### Angular project
+- angular project can be found inside  [angular-application](app/angular-application).
+ -inside the folder run `npm install`.
+- [anugular-cli](https://github.com/angular/angular-cli) commands can be used.
+- inside the folder run `ng serve` to see your angular application.
+
+#### Build the angular project (before run electron)
+- get inside  [angular-application](app/angular-application)
+- run `npm run build`
+
+### Electron project
+- electron configuration can be found inside  [electron](app/main.js).
+- inside the [application](app) run `npm run dev`.
+
+### Resin project (raspberrypi)
 - Sign up on [resin.io](https://dashboard.resin.io/signup)
 - go throught the [getting started guide](http://docs.resin.io/raspberrypi/nodejs/getting-started/) and create a new application
 - clone this repository to your local workspace
@@ -18,14 +33,6 @@ Variable Name | Value | Description | Device-specific
 
 Apply the above settings in the "Fleet Configuration" panel (if applying it for the all devices withing your application), or "Device Configuration" panel (if applying it for a single device).
 
-
-### WHY THIS TEMPLATE
-
-Achieving kinda-smooth desktop application display on a devices like the raspberrypi is hard. This project aims to provide a quickstart template.
-
-### WHY FLUXBOX
-
-We did a lot of researches and tests with several window managers. [Fluxbox](http://fluxbox.org/) ended up being the most balanced between minimum footprint and features
 
 ### URL LAUNCHER config via ENV VARS
 *__!!! Please note that since `0.1.0` the `bool`-based env vars dropped `true` / `false` strings in favour of `0` / `1` ones. !!!__*

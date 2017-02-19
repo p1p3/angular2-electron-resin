@@ -4,9 +4,10 @@
   "description": "electronJS-based resin application",
   "main": "main.js",
   "scripts": {
-    "dev": "NODE_ENV=development electron .",
+    "dev": "set NODE_ENV=development&& electron .",
     "lint": "eslint .",
-    "start": "NODE_ENV=production startx ./node_modules/electron/dist/electron ."
+    "start": "set NODE_ENV=production&& startx ./node_modules/electron/dist/electron .",
+    "electron": "electron ."
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "strict": true
   },
   "devDependencies": {
+    "electron": "^1.4.15",
     "eslint": "^3.14.1",
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0"
