@@ -38,8 +38,6 @@ Apply the above settings in the "Fleet Configuration" panel (if applying it for 
 
 
 ### URL LAUNCHER config via ENV VARS
-*__!!! Please note that since `0.1.0` the `bool`-based env vars dropped `true` / `false` strings in favour of `0` / `1` ones. !!!__*
-
 simply set these [environment varables](http://docs.resin.io/#/pages/management/env-vars.md) in your app via "Environment Variables" panel in the resin dashboard to configure the behaviour of your devices.
 *__Please note that the `bool` type definition in the table is meant to accept to either `0` or `1` values.__*
 
