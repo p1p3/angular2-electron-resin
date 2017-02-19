@@ -1,8 +1,8 @@
 #angular-electronjs-resin(Raspberry Pi)
 
-1. A boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/), [Angular](http://angular.io) and [resin.io](http://resin.io)
+1. A boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/), [Angular](http://angular.io) and [resin.io](http://resin.io).
 
-2. This project is an adapation to the resin-electronjs project, which can be found [here](https://github.com/resin-io/resin-electronjs)
+2. This project is an adapation to the resin-electronjs project, which can be found [here](https://github.com/resin-io/resin-electronjs).
 
 ## Getting started
 
@@ -11,11 +11,11 @@
 - inside the folder run :
     1. `npm install`.
     2. `ng serve`
-- [anugular-cli](https://github.com/angular/angular-cli) commands can be used.
+- all [anugular-cli](https://github.com/angular/angular-cli) commands can be used.
 
 #### Build angular project (before run electron)
-- inside [app/angular-application](app/angular-application)
-- run `npm run build`
+- inside [app/angular-application](app/angular-application).
+- run `npm run build`.
 
 ### Electron project
 - electron configuration can be found inside  [app/main.js](app/main.js).
