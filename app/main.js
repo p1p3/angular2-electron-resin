@@ -3,7 +3,7 @@ const path = require('path');
 const url = require('url');
 
 console.log('Initializing electron application...');
-const environment = process.env.NODE_ENV.trim() || 'development';
+const environment = process.env.NODE_ENV || 'prod';
 
 const {
   app,
