@@ -1,26 +1,27 @@
-#angular-electronjs-resin(raspberrypi)
+#angular-electronjs-resin(Raspberry Pi)
 
-A boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/), [Angular](http://angular.io) and [resin.io](http://resin.io)
+1. A boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/), [Angular](http://angular.io) and [resin.io](http://resin.io)
 
-this project is an adapation to the resin-electronjs project, which can be found [here](https://github.com/resin-io/resin-electronjs)
+2. This project is an adapation to the resin-electronjs project, which can be found [here](https://github.com/resin-io/resin-electronjs)
 
 ## Getting started
 
 ### Angular project
 - angular project can be found inside  [angular-application](app/angular-application).
- -inside the folder run `npm install`.
+- inside the folder run :
+    1. `npm install`.
+    2. `ng serve`
 - [anugular-cli](https://github.com/angular/angular-cli) commands can be used.
-- inside the folder run `ng serve` to see your angular application.
 
-#### Build the angular project (before run electron)
-- get inside  [angular-application](app/angular-application)
+#### Build angular project (before run electron)
+- inside [app/angular-application](app/angular-application)
 - run `npm run build`
 
 ### Electron project
-- electron configuration can be found inside  [electron](app/main.js).
+- electron configuration can be found inside  [app/main.js](app/main.js).
 - inside the [application](app) run `npm run dev`.
 
-### Resin project (raspberrypi)
+### Resin project (Raspberry Pi)
 - Sign up on [resin.io](https://dashboard.resin.io/signup)
 - go throught the [getting started guide](http://docs.resin.io/raspberrypi/nodejs/getting-started/) and create a new application
 - clone this repository to your local workspace
