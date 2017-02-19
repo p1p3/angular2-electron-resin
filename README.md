@@ -2,6 +2,8 @@
 
 A boilerplate for developing kiosks, digital signage or other human-machine interaction projects based on [ElectronJS](http://electron.atom.io/), [Angular](http://angular.io) and [resin.io](http://resin.io)
 
+this project is an adapation to the resin-electronjs project, which can be found [here](https://github.com/resin-io/resin-electronjs)
+
 ## Getting started
 
 ### Angular project
